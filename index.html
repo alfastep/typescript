@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    #results h1 {
+      font-size: 56px;
+    }
+  </style>
+  <div>
+    <h1 class="text-center mt-3 mb-3">Weatherman</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-3 mb-3 text-center">
+          <form>
+            <div class="form-group">
+              <input type="text" class="mt-2" id="zipCode" name="zipCode">
+              <!-- <label for="units">Units</label> -->
+              <select class="mt-2" id="units">
+                <option>Celsius</option>
+                <option>Fahrenheit</option>
+              </select>
+              <button class="btn btn-primary mt-1" id="submit" type="submit">Get Weather</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row ml-3 mr-3" id="results">
+        <div class="col-12 text-center" id="weatherToday"></div>
+      </div>
+    </div>
+  </div>
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
